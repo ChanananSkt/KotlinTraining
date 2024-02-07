@@ -1,0 +1,2 @@
+- fix error Android Gradle plugin requires Java 17 to run. You are currently using Java 11
+- https://stackoverflow.com/questions/66980512/android-studio-error-android-gradle-plugin-requires-java-11-to-run-you-are-cur
