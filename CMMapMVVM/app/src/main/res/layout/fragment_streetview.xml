@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.StreetViewFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/street_view_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/backBtn"
+                android:layout_width="70dp"
+                android:backgroundTint="#00000000"
+                android:layout_height="match_parent"
+                android:src="@drawable/back_btn"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/backBtn"
+                android:layout_alignParentTop="true"
+                android:paddingBottom="20dp"
+                android:paddingTop="5dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/banner" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_toRightOf="@id/backBtn"
+                android:text="Google Street View"
+                android:textColor="#feaa3f"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!-- StreetView Fragment-->
+    <fragment
+        android:id="@+id/streetviewFragment"
+        android:name="com.google.android.gms.maps.SupportStreetViewPanoramaFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

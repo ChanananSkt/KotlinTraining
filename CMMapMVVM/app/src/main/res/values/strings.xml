@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CMMapMVVM</string>
+    <string name="location_info">Searching current location..</string>
+</resources>
